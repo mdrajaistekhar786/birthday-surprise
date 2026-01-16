@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>You Being You 💕</title>
+    <style>
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        video {
+            width: 420px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+        }
+
+        .text-box {
+            max-width: 400px;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        a {
+            display: block;
+            margin-top: 40px;
+            padding: 12px 30px;
+            background: #ff5e8e;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <video controls>
+        <source src="{{ url_for('static', filename='media/video2.mp4') }}" type="video/mp4">
+    </video>
+
+    <div class="text-box">
+        Is video mein bhi tum wahi ho —  
+        sweet, cute, aur bilkul apni si 💕  
+        <br><br>
+        Tumhe dekh kar bina wajah hi  
+        smile aa jaati hai.
+        
+        <a href="/final">Next 💖</a>
+    </div>
+
+</div>
+
+</body>
+</html>

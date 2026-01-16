@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>That Moment ❤️</title>
+    
+           <style>
+    body {
+        background: #0f0f0f;
+        color: white;
+        font-family: Arial;
+        padding: 40px;
+    }
+
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+    video {
+        width: 420px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+    }
+
+    .text-box {
+        max-width: 400px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .last-line {
+        margin-top: 40px;
+        font-style: italic;
+        color: #ffd6e8;
+    }
+
+    a {
+        display: block;
+        margin-top: 50px;
+        padding: 12px 30px;
+        background: #ff5e8e;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        width: fit-content;
+    }
+</style>
+
+        
+
+        
+    
+</head>
+<body>
+ <div class="container">
+
+    <video controls>
+        <source src="{{ url_for('static', filename='media/video1.mp4') }}" type="video/mp4">
+    </video>
+
+    <div class="text-box">
+        Jab tum travel karte hue baat karti ho na,<br>
+        mujhe lagta hai jaise duniya thodi si slow ho jaati hai.<br><br>
+
+        Par shayad isi liye mujhe yeh moment itna pasand hai,<br>
+        kyunki tum bilkul tum khud ho — bina kisi effort ke.
+
+        <div class="last-line">
+            Tumhari awaaz, tumhara flow, aur woh chhoti-chhoti baatein…<br>
+            pata nahi kyun, par sab kuch bohot apna sa lagta hai ❤️
+        </div>
+
+        <a href="/video2">Next 💖</a>
+    </div>
+
+</div>
+
+
+   
+
+
+
+
+
+</body>
+</html>

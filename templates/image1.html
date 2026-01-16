@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For You 💖</title>
+    <style>
+        body {
+            background: #fff0f5;
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+        }
+        img {
+            width: 320px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        p {
+            font-size: 22px;
+            margin-top: 30px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #ff5e8e;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<img src="{{ url_for('static', filename='media/img1.jpeg') }}">
+
+<p>
+    Tumhari ek smile meri poori thakaan mita deti hai 💕  
+    Tum mere liye sirf special nahi, zaroori ho.
+</p>
+
+<a href="/image2">Next 💖</a>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Special Login</title>
+</head>
+<body style="background-color: #fef6f9; text-align: center; margin-top: 100px;">
+
+    <h2>Only for the most special girl 💕</h2>
+
+    <form method="POST">
+    <input type="text" name="username" placeholder="Your name" required style="padding:10px;"><br><br>
+    <input type="password" name="password" placeholder="Secret key" required style="padding:10px;"><br><br>
+    <button type="submit" style="padding:10px 20px;">Enter 💫</button>
+</form>
+
+{% if error %}
+<p style="color:red;">{{ error }}</p>
+{% endif %}
+
+
+</body>
+</html>
