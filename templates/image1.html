@@ -1,44 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>For You 💖</title>
+
     <style>
         body {
-            background: #fff0f5;
-            font-family: Arial;
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+            font-family: "Georgia", serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 50px;
+            padding: 40px;
         }
-        img {
-            width: 320px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+        .content {
+            max-width: 850px;
+            color: white;
+            font-size: 1.4rem;
+            line-height: 1.9;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.25);
+            animation: fadeIn 2s ease forwards;
         }
-        p {
-            font-size: 22px;
-            margin-top: 30px;
-        }
+
         a {
             display: inline-block;
-            margin-top: 30px;
-            padding: 12px 30px;
-            background: #ff5e8e;
+            margin-top: 40px;
+            padding: 14px 36px;
+            background: rgba(255, 94, 142, 0.95);
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
+
 <body>
 
-<img src="{{ url_for('static', filename='media/img1.jpeg') }}">
+<div class="content">
+    <p>
+        Tum shayad khud ko kabhi uss nazar se nahi dekh paogi,
+        jis nazar se main tumhe dekhta hoon ,tu bhott sundrr lgtii haii sachii.<br><br>
 
-<p>
-    Tumhari ek smile meri poori thakaan mita deti hai 💕  
-    Tum mere liye sirf special nahi, zaroori ho.
-</p>
+        Tumhari baatein ufff, tumhari nakhreinnn ,
+        aur bina kahe samajh lena —
+        sab kuch bohot special hai.<br><br>
 
-<a href="/image2">Next 💖</a>
+        Tumhari presence sirf mehsoos nahi hoti,
+        wo dil mein reh jaati hai 💕
+    </p>
+
+    <a href="/image2">Next 💖</a>
+
+</div>
 
 </body>
 </html>
